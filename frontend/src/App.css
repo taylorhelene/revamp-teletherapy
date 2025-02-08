@@ -9,6 +9,16 @@ h1{
   font-size: 3rem;
 
 }
+
+button{
+  background-color: #007bff;
+}
+
+p{
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* Hero container */
 .hero-container {
   position: relative;
@@ -38,7 +48,6 @@ h1{
 }
 
 .auth-button {
-  background-color: #ffffff;
   color: #333;
   border: none;
   padding: 10px 20px;
@@ -48,7 +57,7 @@ h1{
   transition: background-color 0.3s ease;
 }
 
-.auth-button:hover {
+button:hover {
   background-color: #ff5c5c;
   color: white;
 }
@@ -68,7 +77,6 @@ h1{
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: 30px;
-  font-family: 'Arial', sans-serif;
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
@@ -81,7 +89,6 @@ h1{
   font-size: 1.2rem;
   color: white;
   cursor: pointer;
-  border-radius: 50px;
   transition: all 0.3s ease;
 }
 
