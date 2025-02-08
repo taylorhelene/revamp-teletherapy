@@ -89,7 +89,7 @@ const RegisterPage = () => {
             />
           </div>
           <div className="d-flex justify-content-center">
-            <button type="submit" className="btn btn-info btn-lg">Sign Up</button>
+            <button type="submit" className=" btn-info rounded-pill">Sign Up</button>
           </div>
         </form>
         <div className="signin-link text-center mt-3">

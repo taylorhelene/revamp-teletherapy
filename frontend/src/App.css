@@ -211,13 +211,12 @@ button:hover {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
 }
 
 
 
 .register-form {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   padding: 30px;
   border-radius: 10px;
   width: 100%;
@@ -225,42 +224,6 @@ button:hover {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.register-form h1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 2rem;
-  color: #fff;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-.form-control {
-  padding: 10px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-}
-
-.form-control:focus {
-  border-color: #5bc0de; /* Light blue color on focus */
-  box-shadow: 0 0 5px rgba(91, 192, 222, 0.5);
-}
-
-
-
-.signin-link {
-  font-size: 1rem;
-  color: white;
-}
-
-.signin-link a {
-  color: #17a2b8;
-  text-decoration: none;
-}
-
-.signin-link a:hover {
-  text-decoration: underline;
-}
 .home-page {
   background-color: #17a2b8; /* Update the path if needed */
   background-size: cover;
