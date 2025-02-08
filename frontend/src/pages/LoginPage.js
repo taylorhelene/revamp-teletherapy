@@ -31,16 +31,16 @@ const LoginPage = () => {
       src={process.env.PUBLIC_URL + '/ww.lottie'}
       loop
       autoplay
+      className="background-video"
     />
 
 <DotLottieReact
       src={process.env.PUBLIC_URL + '/ff.json'} 
       loop
       autoplay
+      className="background-video"
     />
-        <Lottie animationData={process.env.PUBLIC_URL + '/ww.lottie'} className="background-video" loop={true} />
-        <Lottie animationData={process.env.PUBLIC_URL + '/ff.json'} className="background-video" loop={true} />    
-      </div>
+        </div>
 
       {/* Login Form */}
       <div className="login-form">
