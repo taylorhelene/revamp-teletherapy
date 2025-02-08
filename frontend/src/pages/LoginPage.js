@@ -28,7 +28,7 @@ const LoginPage = () => {
       {/* Background Video */}
       <div className="video-background">
       <DotLottieReact
-        src={process.env.PUBLIC_URL + '/logins.lottie'}
+        src={process.env.PUBLIC_URL + '/login.json'}
         loop
         autoplay
         className="background-video"/>
