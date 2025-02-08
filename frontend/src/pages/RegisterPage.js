@@ -3,6 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import { registerUser } from '../services/apiService'; // Ensure this function is available for handling registration
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+
 
 const RegisterPage = () => {
   const [name, setName] = useState('');
@@ -34,9 +36,11 @@ const RegisterPage = () => {
     <div className="register-container">
       {/* Background Video */}
       <div className="video-background">
-        <video className="background-video" loop autoPlay muted>
-          <source src={process.env.PUBLIC_URL + '/signup.mp4'} type="video/mp4" />
-        </video>
+        <DotLottieReact
+          src={process.env.PUBLIC_URL + '/login.json'}
+          loop
+          autoplay
+          className="background-video"/>
       </div>
 
       {/* Registration Form */}

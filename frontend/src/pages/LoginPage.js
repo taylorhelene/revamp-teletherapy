@@ -27,12 +27,12 @@ const LoginPage = () => {
     <div className="login-container">
       {/* Background Video */}
       <div className="video-background">
-      <DotLottieReact
-        src={process.env.PUBLIC_URL + '/login.json'}
-        loop
-        autoplay
-        className="background-video"/>
-        </div>
+        <DotLottieReact
+          src={process.env.PUBLIC_URL + '/login.json'}
+          loop
+          autoplay
+          className="background-video"/>
+      </div>
 
       {/* Login Form */}
       <div className="login-form">
@@ -60,7 +60,7 @@ const LoginPage = () => {
             />
           </div>
           <div className="d-flex justify-content-center">
-            <button type="submit" className="btn btn-info btn-lg">Log In</button>
+            <button type="submit " className="rounded-pill btn-info">Log In</button>
           </div>
         </form>
         <div className="signin-link text-center mt-3">

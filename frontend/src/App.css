@@ -10,6 +10,14 @@ h1{
 
 }
 
+h2{
+  font-family: "Baskervville", serif;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 20px;
+  font-size: 3rem;
+}
+
 button{
   background-color: #007bff;
   font-family: "Poppins", serif;
@@ -138,7 +146,7 @@ button:hover {
   align-items: center;
   height: 100vh;
   position: relative;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  background-color: rgba(0, 0, 0, 0.3); /* Dark overlay */
 }
 
 .video-background {
@@ -152,18 +160,11 @@ button:hover {
 }
 
 .login-form {
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
   padding: 30px;
   border-radius: 10px;
   width: 100%;
   max-width: 400px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-}
-
-.login-form h1 {
-  font-family: 'Arial', sans-serif;
-  font-size: 2rem;
-  color: #fff;
 }
 
 .form-group {
@@ -177,7 +178,7 @@ button:hover {
 }
 
 .form-control:focus {
-  border-color: #5bc0de; /* Light blue color on focus */
+  border-color:  #007bff; /* Light blue color on focus */
   box-shadow: 0 0 5px rgba(91, 192, 222, 0.5);
 }
 
@@ -185,16 +186,10 @@ button:hover {
   width: 100%;
   padding: 12px;
   font-size: 1.1rem;
-  background-color: #17a2b8;
   border: none;
-  border-radius: 5px;
   color: white;
 }
 
-.btn-info:hover {
-  background-color: #138496;
-  transition: background-color 0.3s ease;
-}
 
 .signin-link {
   font-size: 1rem;
@@ -202,7 +197,7 @@ button:hover {
 }
 
 .signin-link a {
-  color: #17a2b8;
+  color:  #007bff;
   text-decoration: none;
 }
 
@@ -251,20 +246,7 @@ button:hover {
   box-shadow: 0 0 5px rgba(91, 192, 222, 0.5);
 }
 
-.btn-info {
-  width: 100%;
-  padding: 12px;
-  font-size: 1.1rem;
-  background-color: #17a2b8;
-  border: none;
-  border-radius: 5px;
-  color: white;
-}
 
-.btn-info:hover {
-  background-color: #138496;
-  transition: background-color 0.3s ease;
-}
 
 .signin-link {
   font-size: 1rem;
