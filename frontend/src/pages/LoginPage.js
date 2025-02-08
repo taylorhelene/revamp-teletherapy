@@ -28,18 +28,10 @@ const LoginPage = () => {
       {/* Background Video */}
       <div className="video-background">
       <DotLottieReact
-      src={process.env.PUBLIC_URL + '/ww.lottie'}
-      loop
-      autoplay
-      className="background-video"
-    />
-
-<DotLottieReact
-      src={process.env.PUBLIC_URL + '/ff.json'} 
-      loop
-      autoplay
-      className="background-video"
-    />
+        src={process.env.PUBLIC_URL + '/logins.lottie'}
+        loop
+        autoplay
+        className="background-video"/>
         </div>
 
       {/* Login Form */}
