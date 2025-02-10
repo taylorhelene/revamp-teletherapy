@@ -23,7 +23,7 @@ const Chatbot = ({ sessionId }) => {
     };
 
     return (
-        <div className="chat-page">
+        <div className="chat-page container">
             <div className="msg-inbox">
                 <div className="chats">
                     <div className="msg-page">

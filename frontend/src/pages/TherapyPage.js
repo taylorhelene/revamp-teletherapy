@@ -68,10 +68,10 @@ const TherapyPage = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container-fluid home-page">
             <h1 className="text-center">Therapy Session</h1>
             <div className="text-center">
-                <button className="btn btn-primary" onClick={startSession}>
+                <button className="rounded-pill auth-button " onClick={startSession}>
                     Start Therapy Session
                 </button>
             </div>

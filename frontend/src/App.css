@@ -365,19 +365,18 @@ m-btn {
 
 /* Styling the inbox */
 .chat-page {
-  padding: 0 0 50px 0;
+  padding: 5%;
   height: 90%;
   width: 80%;
 }
 
 .msg-inbox {
-  border: 1px solid #ccc;
   overflow: hidden;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 80%;
   border-radius: 1%;
-  background-color: #138496;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 
