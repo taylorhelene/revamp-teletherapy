@@ -37,7 +37,7 @@ export const initiateSession = async (sessionData) => {
     }
 
     try {
-        const response = await axios.post('http://localhost:5000/sessions', sessionData, {
+        const response = await axios.post('http://localhost:5000/api/sessions', sessionData, {
             headers: {
                 'Authorization': `Bearer ${token}` // Add token to headers
             }
@@ -156,7 +156,7 @@ export const completePayment = async ({ sessionId, amount, phoneNumber, userId})
 // Function to capture and analyze image
 export const captureAndAnalyzeImage = async (imageData) => {
     try {
-      const response = await axios.post('http://localhost:5000/sessions/analyzeImage', { image: imageData });
+      const response = await axios.post('http://localhost:5000/api/sessions/analyzeImage', { image: imageData });
       return response.data.feedback; // This feedback will be the text read aloud
     } catch (error) {
       console.error('Error capturing and analyzing image:', error);

@@ -205,7 +205,7 @@ exports.analyzeWebcamImage = async (req, res) => {
     const feedback = categories.includes('attention')
       ? 'Great focus! Keep going!'
       : 'Try to focus on the exercise. You can do this!';
-
+    console.log(analysis)
     res.json({ analysis, feedback });
   } catch (error) {
     res.status(500).json({ error: error.message });
