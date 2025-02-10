@@ -151,7 +151,7 @@ exports.getChatbotResponse = async (req, res) => {
       const response = await axios.post(
           azureEndpoint,
           {
-              messages: [{ role: 'user', content: `You are a virtual therapist guiding a child through cognitive exercises. The child's input is: "${message}". Respond in a supportive and encouraging tone, appropriate for a child.` }],
+              messages: [{ role: 'user', content: `You are a virtual therapist guiding a child through cognitive exercises. The child's input is: "${message}". Respond in a supportive and encouraging tone, appropriate for a child. Respond in Swahili or English depending on the current questions language because children are Kenyan` }],
               max_tokens: 200,
               temperature: 0.7,
           },
