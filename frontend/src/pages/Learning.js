@@ -14,32 +14,32 @@ const Learning = () => {
       const fakeVideos = [
         {
           title: "Facial Expressions for Kids",
-          url: "https://www.youtube.com/embed/abc123",
+          url: "https://www.youtube.com/embed/ymrvDRofDkY?si=Fertlv8OcbEWU8Pq",
           thumbnail: "https://img.youtube.com/vi/abc123/0.jpg",
         },
         {
           title: "Swahili Pronunciation Basics",
-          url: "https://www.youtube.com/embed/def456",
+          url: "https://www.youtube.com/embed/Iwo2Rat4EqI?si=7E1VKfifNa6LGfza" ,
           thumbnail: "https://img.youtube.com/vi/def456/0.jpg",
         },
         {
-          title: "Learn Emotions with Facial Expressions",
-          url: "https://www.youtube.com/embed/ghi789",
+          title: "Learn Emotions with Animation",
+          url: "https://www.youtube.com/embed/37w9JjUWN30?si=DeNaE-sc-P2j7t6D" ,
           thumbnail: "https://img.youtube.com/vi/ghi789/0.jpg",
         },
         {
           title: "English Words for Beginners",
-          url: "https://www.youtube.com/embed/jkl012",
+          url: "https://www.youtube.com/embed/drlIUqRYM-w?si=QbYzYM_pTJRmWBW2" ,
           thumbnail: "https://img.youtube.com/vi/jkl012/0.jpg",
         },
         {
           title: "Swahili for Children",
-          url: "https://www.youtube.com/embed/mno345",
+          url: "https://www.youtube.com/embed/dWfCKdn46iE?si=MIgEPBb8lb-b7hxj" ,
           thumbnail: "https://img.youtube.com/vi/mno345/0.jpg",
         },
         {
           title: "Practice Pronouncing Words",
-          url: "https://www.youtube.com/embed/pqr678",
+          url: "https://www.youtube.com/embed/4SNdy7q6b8g?si=xqSj5tI3k2daPWUn",
           thumbnail: "https://img.youtube.com/vi/pqr678/0.jpg",
         },
       ];
