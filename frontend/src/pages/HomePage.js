@@ -8,7 +8,7 @@ const HomePage = () => {
     return (
         <div className='home-page'>
             <h1 className="text-center mt-3">Welcome to the Teletherapy Platform</h1>
-            <div className="row p-4 d-flex justify-content-center level">
+            <div className="row p-4 d-flex justify-content-center level" onClick={() => navigate('/learning')}>
                 <h4 className="col-sm-4">Level</h4>
                  <DotLottieReact
                           src={process.env.PUBLIC_URL + '/one.lottie'}
