@@ -48,25 +48,27 @@ const Learning = () => {
     }, []);
   
     return (
-      <div className="grid-container">
+      <div className="container">
         <h2>Educational Videos on Facial Expressions & Pronunciation</h2>
   
         {selectedVideo && (
-          <div className="video-player">
-            <iframe
-              width="560"
-              height="315"
-              src={selectedVideo}
-              title="Selected Video"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-            <button onClick={() => setSelectedVideo(null)}>Close</button>
+          <div className="overlay">
+            <div className="video-player">
+              <iframe
+                width="100%"
+                height="100%"
+                src={selectedVideo}
+                title="Selected Video"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
+              <button className="close-btn" onClick={() => setSelectedVideo(null)}>✖ Close</button>
+            </div>
           </div>
         )}
   
-        <div className="video-grid">
+        <div className={`video-grid ${selectedVideo ? "blurred" : ""}`}>
           {videos.map((video, index) => (
             <div key={index} className="video-card" onClick={() => setSelectedVideo(video.url)}>
               <img src={video.thumbnail} alt={video.title} />

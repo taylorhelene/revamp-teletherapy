@@ -12,14 +12,14 @@ const Layout = () => {
     };
 
     return (
-        <div className="container">
+        <div className="container-fluid layout">
             {/* Bootstrap Navigation with spacing */}
             <nav className="nav nav-tabs justify-content-between">
                 <button 
-                    className={getTabClass('/home')} 
-                    onClick={() => navigate('/home')}
+                    className={getTabClass('/learning')} 
+                    onClick={() => navigate('/learning')}
                 >
-                    Home
+                    Learning
                 </button>
                 <button 
                     className={getTabClass('/therapy')} 

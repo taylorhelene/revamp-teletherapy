@@ -14,7 +14,7 @@ const HomePage = () => {
                           src={process.env.PUBLIC_URL + '/one.lottie'}
                           loop
                           autoplay
-                          className="col-sm-1"/>
+                          className="col-sm-2"/>
             </div>
             <div className="row p-4 d-flex justify-content-center level" onClick={() => navigate('/webcam')}>
                 <h4 className="col-sm-4">Level</h4>
@@ -22,7 +22,7 @@ const HomePage = () => {
                           src={process.env.PUBLIC_URL + '/two.lottie'}
                           loop
                           autoplay
-                          className="col-sm-1"/>
+                          className="col-sm-2"/>
             </div>
             <div className="row p-4 d-flex justify-content-center level" onClick={() => navigate('/therapy')}>
                 <h4 className="col-sm-4">Level</h4>
@@ -30,16 +30,7 @@ const HomePage = () => {
                           src={process.env.PUBLIC_URL + '/three.lottie'}
                           loop
                           autoplay
-                          className="col-sm-1"/>
-            </div>
-            <div className="row p-4">
-                           
-                <button className="btn btn-primary" onClick={() => navigate('/therapy')}>
-                    Start Therapy Session
-                </button>
-                <button className="btn btn-primary" onClick={() => navigate('/webcam')}>
-                    Go to Webcam for Expression Training
-                </button>
+                          className="col-sm-2"/>
             </div>
         </div>
     );
