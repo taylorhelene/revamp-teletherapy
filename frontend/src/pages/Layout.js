@@ -8,13 +8,13 @@ const Layout = () => {
 
     // Define the active tab based on the current location
     const getTabClass = (path) => {
-        return location.pathname === path ? 'nav-link active' : 'nav-link';
+        return location.pathname === path ? ' flex-grow-1 nav-link active' : 'flex-grow-1 nav-link';
     };
 
     return (
-        <div className="container-fluid layout">
+        <div className="container-fluid layout p-4">
             {/* Bootstrap Navigation with spacing */}
-            <nav className="nav nav-pills justify-content-between m-2">
+            <nav className="nav nav-pills justify-content-between d-flex">
                 <button 
                     className={getTabClass('/learning')} 
                     onClick={() => navigate('/learning')}

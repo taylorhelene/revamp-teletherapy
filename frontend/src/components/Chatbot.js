@@ -44,10 +44,10 @@ const Chatbot = ({ sessionId }) => {
                         value={input}
                         onChange={(e) => setInput(e.target.value)}
                         placeholder="Type your message..."
-                        className="form-control"
+                        className="form-control p-2"
                     />
-                    <button className="custom-btn btn-primary" onClick={handleSendMessage}>
-                        Send
+                    <button className="cta-button2 rounded-pill " onClick={handleSendMessage}>
+                        Send📤
                     </button>
                 </div>
             </div>

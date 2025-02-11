@@ -15,7 +15,7 @@ const Learning = () => {
         {
           title: "Facial Expressions for Kids",
           url: "https://www.youtube.com/embed/ymrvDRofDkY?si=Fertlv8OcbEWU8Pq",
-          thumbnail: "https://img.youtube.com/vi/abc123/0.jpg",
+          thumbnail: "https://www.youtube.com/embed/ymrvDRofDkY?si=Fertlv8OcbEWU8Pq",
         },
         {
           title: "Swahili Pronunciation Basics",
@@ -63,7 +63,7 @@ const Learning = () => {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
-              <button className="close-btn" onClick={() => setSelectedVideo(null)}>✖ Close</button>
+              <button className="button rounded-pill close-btn" onClick={() => setSelectedVideo(null)}>Close</button>
             </div>
           </div>
         )}
@@ -71,7 +71,7 @@ const Learning = () => {
         <div className={`video-grid ${selectedVideo ? "blurred" : ""}`}>
           {videos.map((video, index) => (
             <div key={index} className="video-card" onClick={() => setSelectedVideo(video.url)}>
-              <img src={video.thumbnail} alt={video.title} />
+              <img src={process.env.PUBLIC_URL + '/learn.png'} alt={video.title} />
               <h4>{video.title}</h4>
             </div>
           ))}

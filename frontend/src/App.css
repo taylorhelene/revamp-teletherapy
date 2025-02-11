@@ -15,7 +15,7 @@ h2{
   font-weight: 600;
   font-style: normal;
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 h4{
@@ -23,7 +23,7 @@ h4{
   font-weight: 500;
   font-style: normal;
   margin-bottom: 20px;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 button{
@@ -81,8 +81,8 @@ button:hover {
 }
 
 nav{
-  margin-left: 10%;
-  margin-right: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 /* Hero Content */
@@ -118,6 +118,18 @@ nav{
 .cta-button:hover {
   background-color: #e44b4b;
 }
+
+.cta-button2 {
+  background-color: #ff5c5c;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.cta-button2:hover {
+  background-color: #e44b4b;
+}
+
 
 /* Key Features Section */
 .key-features {
@@ -271,6 +283,7 @@ nav{
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 3%;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -365,25 +378,6 @@ m-btn {
   transition: background-color 0.3s ease;
 }
 
-.custom-btn.btn-primary {
-  background-color:#5bc0de;
-  color: white;
-  border: none;
-}
-
-.custom-btn.btn-primary:hover {
-  background-color: #0056b3;
-}
-
-.custom-btn.btn-success {
-  background-color:#5bc0de;
-  color: white;
-  border: none;
-}
-
-.custom-btn.btn-success:hover {
-  background-color:#007bff;
-}
 
 
 /* Styling the inbox */
@@ -735,7 +729,6 @@ received-chats-img {
   padding: 10px 15px;
   font-size: 18px;
   cursor: pointer;
-  border-radius: 50%;
 }
 
 .close-btn:hover {
