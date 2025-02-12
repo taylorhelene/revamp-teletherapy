@@ -103,12 +103,12 @@ const WebcamCapture = () => {
 
   return (
     <div className="webcam-container">
-      <h1 className="title">Webcam Capture and Analysis</h1>
-      <h2>Write or Show: <strong>{suggestion}</strong></h2>
+      <h2 className="title">Webcam Capture and Analysis</h2>
+      <h4>Type or Write Down and Show on Camera : <strong>{suggestion}</strong></h4>
       <div className="webcam-box">
         <video ref={videoRef} autoPlay className="webcam-video"></video>
       </div>
-      <button className="capture-button" onClick={captureAndSubmitImage}>
+      <button className="capture-button m-2" onClick={captureAndSubmitImage}>
         Capture & Analyze
       </button>
       <input
@@ -116,6 +116,7 @@ const WebcamCapture = () => {
         placeholder="Type here..."
         value={typedInput}
         onChange={(e) => setTypedInput(e.target.value)}
+        className='form-control inputwebcam'
       />
       <button className="submit-button" onClick={handleTextSubmit}>
         Submit

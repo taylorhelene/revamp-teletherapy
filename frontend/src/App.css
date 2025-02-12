@@ -23,7 +23,7 @@ h4{
   font-weight: 500;
   font-style: normal;
   margin-bottom: 20px;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 button{
@@ -604,7 +604,6 @@ received-chats-img {
 }
 
 .title {
-  font-size: 24px;
   font-weight: bold;
   margin-bottom: 20px;
   color: #2c3e50;
@@ -631,7 +630,7 @@ received-chats-img {
   font-size: 16px;
   font-weight: bold;
   color: white;
-  background-color: #3498db;
+  background-color:  #007bff;
   border: none;
   border-radius: 25px;
   cursor: pointer;
@@ -639,7 +638,7 @@ received-chats-img {
 }
 
 .capture-button:hover {
-  background-color: #2980b9;
+  background-color: #ff5c5c;
 }
 
 .feedback-text {
@@ -649,6 +648,23 @@ received-chats-img {
   text-align: center;
 }
 
+.submit-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color:  #007bff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.submit-button:hover {
+  background-color: #ff5c5c;
+}
+.inputwebcam{
+  border-color: #007bff;
+}
 
 
 /* Main container */
@@ -723,7 +739,7 @@ received-chats-img {
   position: absolute;
   top: 10px;
   right: 20px;
-  background: red;
+  background-color: #ff5c5c;
   color: white;
   border: none;
   padding: 10px 15px;
