@@ -21,17 +21,19 @@ const Layout = () => {
                 >
                     Learning
                 </button>
-                <button 
-                    className={getTabClass('/therapy')} 
-                    onClick={() => navigate('/therapy')}
-                >
-                    Therapy
-                </button>
+               
                 <button 
                     className={getTabClass('/webcam')} 
                     onClick={() => navigate('/webcam')}
                 >
                     Webcam
+                </button>
+
+                <button 
+                    className={getTabClass('/therapy')} 
+                    onClick={() => navigate('/therapy')}
+                >
+                    Therapy
                 </button>
             </nav>
 

@@ -95,7 +95,7 @@ const TherapyPage = () => {
                         )}
                     </div>
                     <button
-                        className="btn btn-success"
+                        className="btn btn-info"
                         onClick={handlePayment}
                         disabled={!isPhoneValid}
                     >
