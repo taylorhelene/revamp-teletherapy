@@ -66,7 +66,7 @@ exports.createSession = async (req, res) => {
             userId: req.user.id,
             sessionType: "therapy",
             startDate: new Date(),
-            sessionCount: 1, // New session starts with count 1
+            sessionCount: 0, // New session starts with count 1
             duration,
             status: 'Pending',
             paid: false, // Mark the new session as unpaid
