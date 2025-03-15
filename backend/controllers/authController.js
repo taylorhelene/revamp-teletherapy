@@ -2,7 +2,7 @@ const User = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 require('../config/db'); 
-var salt = bcrypt.genSaltSync(10);
+const salt = bcrypt.genSaltSync(10);
 
 
 // Register a new user

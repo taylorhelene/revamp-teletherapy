@@ -1,10 +1,13 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 import { analyzeImage } from '../services/imageService';
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import '../App.css';
 
 const suggestions = [
-  'A', 'B', 'C', '1', '2', '3', 'Dog', 'Cat', 'Apple', 'Tunda', 'Maji', 'Rafiki',
+  'A', 'B', 'C','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z',
+   '1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22',
+   '23','24','25','Dog', 'Cat', 'Apple', 'Tunda', 'Maji', 'Rafiki',
   'Hello', 'Jambo', 'Asante', 'Good job', 'Karibu', 'Nini hiki?'
 ];
 
@@ -18,6 +21,8 @@ const WebcamCapture = () => {
   const [feedback, setFeedback] = useState('');
   const [suggestion, setSuggestion] = useState(getRandomSuggestion());
   const [typedInput, setTypedInput] = useState('');
+  const [showSuccess, setShowSuccess] = useState(false);
+
 
   useEffect(() => {
     let stream = null;
@@ -71,6 +76,7 @@ const WebcamCapture = () => {
       
       if (response.feedback.includes('Good writing')) {
         setSuggestion(getRandomSuggestion());
+        showSuccessAlert();
       }
     } catch (error) {
       console.error('Error analyzing image:', error.message);
@@ -82,10 +88,16 @@ const WebcamCapture = () => {
     if (typedInput.toLowerCase() === suggestion.toLowerCase()) {
       setFeedback('Good writing! 👏');
       setSuggestion(getRandomSuggestion());
+      showSuccessAlert();
     } else {
       setFeedback('Try again! You can do it!');
     }
     readAloud(feedback);
+  };
+
+  const showSuccessAlert = () => {
+    setShowSuccess(true);
+    setTimeout(() => setShowSuccess(false), 7000);
   };
 
   const readAloud = (text) => {
@@ -103,8 +115,9 @@ const WebcamCapture = () => {
 
   return (
     <div className="webcam-container">
-      <h2 className="title">Webcam Capture and Analysis</h2>
-      <h4>Type or Write Down and Show on Camera : <strong>{suggestion}</strong></h4>
+      <h2 className="title">Webcam Analysis</h2>
+      <h4>Type or Write Down or Show on Camera the following : </h4>
+      <h2><strong>{suggestion}</strong></h2>
       <div className="webcam-box">
         <video ref={videoRef} autoPlay className="webcam-video"></video>
       </div>
@@ -113,7 +126,7 @@ const WebcamCapture = () => {
       </button>
       <input
         type="text"
-        placeholder="Type here..."
+        placeholder="Direct Child To Type Here if notebook is to write down word is unavailable..."
         value={typedInput}
         onChange={(e) => setTypedInput(e.target.value)}
         className='form-control inputwebcam'
@@ -122,6 +135,16 @@ const WebcamCapture = () => {
         Submit
       </button>
       {feedback && <p className="feedback-text">Feedback: {feedback}</p>}
+      {showSuccess && (
+        <div className="success-alert">
+           <DotLottieReact
+            src={process.env.PUBLIC_URL + '/congrats.json'}
+            loop
+            autoplay
+            style={{ height: '200px', width: '200px' }}
+            />
+        </div>
+      )}
     </div>
   );
 };
