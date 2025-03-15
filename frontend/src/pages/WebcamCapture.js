@@ -72,7 +72,6 @@ const WebcamCapture = () => {
     try {
       const response = await analyzeImage(formData);
       setFeedback(response.feedback);
-      readAloud(response.feedback);
       
       if (response.feedback.includes('Good writing')) {
         setSuggestion(getRandomSuggestion());
@@ -86,13 +85,12 @@ const WebcamCapture = () => {
 
   const handleTextSubmit = async () => {
     if (typedInput.toLowerCase() === suggestion.toLowerCase()) {
-      setFeedback('Good writing! 👏');
+      setFeedback('Good writing!');
       setSuggestion(getRandomSuggestion());
       showSuccessAlert();
     } else {
       setFeedback('Try again! You can do it!');
     }
-    readAloud(feedback);
   };
 
   const showSuccessAlert = () => {
@@ -112,6 +110,12 @@ const WebcamCapture = () => {
     utterance.rate = 1;
     synth.speak(utterance);
   };
+
+  useEffect(() => {
+    if (feedback) {
+      readAloud(feedback);
+    }
+  }, [feedback]);  
 
   return (
     <div className="webcam-container">
@@ -141,7 +145,6 @@ const WebcamCapture = () => {
             src={process.env.PUBLIC_URL + '/congrats.json'}
             loop
             autoplay
-            style={{ height: '200px', width: '200px' }}
             />
         </div>
       )}
